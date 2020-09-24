@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Lesson 01: DOM - Example 01</title>
+	<link rel="stylesheet" href="style.css" />
+	<script src="script.js"></script>
+</head>
+
+<body class="surface">
+	<div class="inline-row">
+		<h1 id="titulo" class="title">Exprimiendo JavaScript</h1>
+	</div>
+	<hr />
+	<ol>
+		<li class="inline-row">
+			<p>Abrir la consola usando</p>
+			<pre class="highlight">CTRL + F12</pre>
+		</li>
+		<li>
+			<div class="inline-row">
+				<p>En la consola, escriba y ejecute</p>
+				<pre class="highlight">document</pre>
+				<p>para acceder al documento</p>
+				<button class="button" onclick="toggle(1)">+</button>
+			</div>
+			<div class="result highlight" hidden="hidden">
+				<p>El resultado obtenido es el objeto <i>document</i></p>
+				<pre>#document</pre>
+			</div>
+		</li>
+		<li>
+			<div class="inline-row">
+				<p>Escriba y ejecute</p>
+				<pre class="highlight">document.getElementById('titulo')</pre>
+				<button class="button" onclick="toggle(2)">+</button>
+			</div>
+			<div class="result highlight" hidden="hidden">
+				<p>El resultado obtenido es:</p>
+				<pre><&zwj;h1 id="titulo" class="title">Exprimiendo JavaScript<&zwj;/h1></pre>
+				<mark>Aquí se usa el DOM para buscar un elemento por nombre identificador</mark>
+			</div>
+		</li>
+		<li>
+			<div class="inline-row">
+				<p>Ejecutar</p>
+				<pre class="highlight">document.getElementsByClassName('title')[0].style.color="yellow"</pre>
+				<button class="button" onclick="toggle(3)">+</button>
+			</div>
+			<div class="result highlight" hidden="hidden">
+				<p>
+					Verá que el título de la página, ha cambiado de color. El resultado
+					obtenido es:
+				</p>
+				<h1 style="color: yellow">Exprimiendo JavaScript</h1>
+				<mark>Aquí se usa el DOM para buscar un elemento por nombre de clase y cambiar su estilo</mark>
+			</div>
+		</li>
+		<li>
+			<div class="inline-row">
+				<p>Ingresar al archivo <i>script.js</i></p>
+				<button class="button" onclick="toggle(4)">+</button>
+			</div>
+			<div class="result highlight" hidden="hidden">
+				<p> En el archivo se encuentra la función <i>toggle</i>, invocada cuando se hace clic en uno de los botones.</p>
+				<p> Cuando se ejecuta la función, se busca por nombre de etiqueta <&zwj;li> y se obtiene el i-esimo elemento de
+						la lista que corresponda al índice <i>index</i>.
+						<mark>Aquí se usa el DOM para buscar un elemento por nombre de etiqueta</mark>
+				</p>
+				<p> Por último, obtiene el primer elemento que contenga la clase <i>result</i> y setea el atributo <i>hidden</i>
+					del objeto.
+					<mark>Aquí se usa el DOM para buscar un elemento por clase y para cambiar el valor de un atributo</mark>
+				</p>
+			</div>
+		</li>
+	</ol>
+</body>
+
+</html>

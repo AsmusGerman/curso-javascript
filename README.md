@@ -1,1 +1,3 @@
-# curso-javascript
+# Exprimiendo Javascript
+
+## Lección 1: Document Object Model (DOM)

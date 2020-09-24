@@ -1,0 +1,57 @@
+:root {
+  --black: #000000;
+  --tundora: #434343;
+  --fiord: #404b69;
+  --white: #ffffff;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  font-size: 14px;
+  font-family: monospace;
+}
+
+.surface {
+  color: var(--white);
+  background-color: var(--tundora);
+}
+
+.inline-row * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.title {
+  color: var(--white);
+}
+
+.highlight {
+  margin: auto;
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-weight: 500px;
+  background-color: var(--fiord);
+}
+
+.result {
+  padding: 20px;
+  margin: 10px auto;
+}
+
+.button {
+  border: 1px solid var(--black);
+  border-radius: 2px;
+  background-color: var(--white);
+  color: var(--black);
+  outline: none;
+}
+
+mark {
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 2px 4px;
+  background-color: var(--white);
+}
